@@ -7,7 +7,7 @@
             shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Animated Umbrella Shop</title>
+        <title>AU - Category</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -43,7 +43,7 @@
         </nav>
                 <!-- Header-->
                 <header class="py-5">
-            <div class="container px-lg-4" style="background-color:black">
+            <div class="container-fluid px-lg-4" style="background-color:black">
                 <div class="p-4 p-lg-5 rounded-3 text-center">
                     <div class="m-4 m-lg-2">
                         <h1 class="display-5 fw-bold text-light">Welcome to Animated Umbrella Shop!</h1>

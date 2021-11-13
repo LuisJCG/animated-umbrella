@@ -43,3 +43,21 @@ CRITICAL - 2021-11-13 11:20:39 --> Invalid file: HomeView.php
 #5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-11-13 13:53:41 --> Invalid file: ProductView.php
+#0 C:\xampp\htdocs\animated-umbrella\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ProductView.php')
+#1 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('ProductView', Array, true)
+#2 C:\xampp\htdocs\animated-umbrella\app\Controllers\Product.php(9): view('ProductView')
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Product->index()
+#4 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-13 13:53:51 --> Invalid file: ProductView.php
+#0 C:\xampp\htdocs\animated-umbrella\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ProductView.php')
+#1 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('ProductView', Array, true)
+#2 C:\xampp\htdocs\animated-umbrella\app\Controllers\Product.php(9): view('ProductView')
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Product->index()
+#4 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
