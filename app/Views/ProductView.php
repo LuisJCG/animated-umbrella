@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <title>AU - Prodcut</title>
+      <title>AU - Product</title>
       <!-- Favicon-->
       <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
       <!-- Bootstrap icons-->
@@ -26,8 +26,19 @@
          </div>
       </nav>
 
+        <!-- Header-->
+        <header class="py-5">
+        <div class="container px-lg-4">
+                <div class="p-4 p-lg-2 rounded-3">
+                    <div class="m-3 m-lg-0">
+                        <h1 class="display-5 fw-bold text">Product Detail</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
       <!-- Section-->
-      <section class=" py-5">
+      <section class="py-1">
          <div class="container px-4 px-lg-5">
             <div class="row">
                <div class="col-md-6 mb-4 mb-md-0">
@@ -57,7 +68,7 @@
       </section>
 
                       <!-- Header-->
-                      <header class="py-6">
+                      <header class="mt-5">
             <div class="container-fluid px-lg-4" style="background-color:black">
                 <div class="p-4 p-lg-5 rounded-3 text-center">
                     <div class="m-4 m-lg-2">

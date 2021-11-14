@@ -61,3 +61,12 @@ CRITICAL - 2021-11-13 13:53:51 --> Invalid file: ProductView.php
 #5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-11-13 15:05:45 --> Invalid file: CartView.php
+#0 C:\xampp\htdocs\animated-umbrella\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('CartView.php')
+#1 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('CartView', Array, true)
+#2 C:\xampp\htdocs\animated-umbrella\app\Controllers\Cart.php(9): view('CartView')
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Cart->index()
+#4 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -57,7 +57,7 @@
                <div class="row">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
+                     <img class="img-responsive" src=https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="https://dummyimage.com/500x300/dee2e6/6c757d.jpg">
                      </a>
                   </div>
                   <div class="col-md-5">
@@ -71,7 +71,7 @@
                <div class="row">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
+                     <img class="img-fluid z-depth-1" src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="https://dummyimage.com/500x300/dee2e6/6c757d.jpg">
                      </a>
                   </div>
                   <div class="col-md-5">
@@ -85,7 +85,7 @@
                <div class="row">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
+                     <img class="img-responsive" src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="https://dummyimage.com/500x300/dee2e6/6c757d.jpg">
                      </a>
                   </div>
                   <div class="col-md-5">
