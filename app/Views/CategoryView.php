@@ -32,7 +32,7 @@
             <div style="float:right">
                <a href="cart.html" class="icons-btn">
                <i class="bi bi-cart4 text-danger"
-                  style="font-size:1rem;><span class="number p-1"">2</span></i>
+                  style="font-size:1rem;"><span class="number p-1"">2</span></i>
                </a>
             </div>
          </div>
@@ -54,50 +54,23 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3
                row-cols-xl-4 justify-content-center">
                <!-- CARDS-->
+               <?php foreach ($categories as $category) { ?>
                <div class="row">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
+                     <img class="img-responsive" src=https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="https://dummyimage.com/500x300/dee2e6/6c757d.jpg">
                      </a>
                   </div>
                   <div class="col-md-5">
-                     <h3>Project Two</h3>
+                     <h3><?php echo $category["category_name"] ?></h3>
                      <h4>Subheading</h4>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
                      <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                   </div>
                </div>
                <hr />
-               <div class="row">
-                  <div class="col-md-6">
-                     <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
-                     </a>
-                  </div>
-                  <div class="col-md-5">
-                     <h3>Project Two</h3>
-                     <h4>Subheading</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  </div>
-               </div>
-               <hr />
-               <div class="row">
-                  <div class="col-md-6">
-                     <a href="#">
-                     <img class="img-responsive" src="http://placehold.it/500x250" alt="">
-                     </a>
-                  </div>
-                  <div class="col-md-5">
-                     <h3>Project Two</h3>
-                     <h4>Subheading</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  </div>
-               </div>
-               <hr />
-               <!-- /.row -->
-            </div>
+               <?php }?>
+            </div> 
          </div>
       </section>
       <!-- Footer-->

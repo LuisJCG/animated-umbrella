@@ -19,7 +19,7 @@
                 <a class="navbar-brand" href="#!">Animated Umbrella</a>
                 <div style="float:right">
                   <a href="cart.html" class="icons-btn">
-                    <i class="bi bi-cart4 text-danger" style="font-size:1rem;><span class="number p-1" ">2</span></i>
+                    <i class="bi bi-cart4 text-danger" style="font-size:1rem;"><span class="number p-1" ">2</span></i>
                   </a>
                 </div>
             </div>
