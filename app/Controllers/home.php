@@ -1,11 +1,15 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\CategoryModel;
+
 
 class Home extends BaseController
 {
     public function index()
     {
-        return view('HomeView');
+        $categories = new CategoryModel();
+        $data["categories"] = $categories->getAll();
+        return view('HomeView', $data);
     }
 }

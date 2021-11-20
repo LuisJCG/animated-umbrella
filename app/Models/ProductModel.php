@@ -12,8 +12,15 @@ class ProductModel extends Model
     protected $useTimestamps = false;
 
 
-    public function getAll() {
-        return $this->findAll();
-    }
+    public function getAllByCategoryName($category)
+    {
+        $query = " SELECT * FROM product INNER JOIN category ON product.id = category.id 
+                    WHERE product.category = ( 
+                    SELECT category.id 
+                    FROM category
+                    WHERE category.category_name = '$category')";
 
+        $res = $this->db->query($query);
+        return $res->getResultArray();
+    }
 }
