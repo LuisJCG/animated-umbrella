@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="#!">Animated Umbrella</a>
             <div style="float:right">
                <a href="cart.html" class="icons-btn">
-               <i class="bi bi-trash text-danger" style="font-size:1rem;><span class="number p-1" ">2</span></i>
+               <i class="bi bi-trash text-danger" style="font-size:1rem;"><span class="number p-1" ">2</span></i>
                </a>
             </div>
          </div>
@@ -55,7 +55,7 @@
                      <td>Otto</td>
                      <td>Otto</td>
                      <td> <a href="cart.html" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;><span class="number p-1" "></span></i>
+                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
                         </a>
                      </td>
                      <td>Delete</td>
@@ -66,7 +66,7 @@
                      <td>Thornton</td>
                      <td>Otto</td>
                      <td> <a href="cart.html" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;><span class="number p-1" "></span></i>
+                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
                         </a>
                      </td>
                      <td>Delete</td>
@@ -77,7 +77,7 @@
                      <td>Thornton</td>
                      <td>Otto</td>
                      <td> <a href="cart.html" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;><span class="number p-1" "></span></i>
+                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
                         </a>
                      </td>
                      <td>@fat</td>
