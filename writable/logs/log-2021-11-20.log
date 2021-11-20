@@ -173,3 +173,14 @@ CRITICAL - 2021-11-20 07:10:51 --> Object of class CodeIgniter\Database\MySQLi\R
 #4 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2021-11-20 14:23:02 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\animated-umbrella\app\Views\CategoryView.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\animated-umbrella\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('CategoryView', Array, true)
+#4 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): view('CategoryView', Array)
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -14,7 +14,7 @@ class ProductModel extends Model
 
     public function getAllByCategoryName($category)
     {
-        $query = " SELECT * FROM product INNER JOIN category ON product.id = category.id 
+        $query = " SELECT * FROM product
                     WHERE product.category = ( 
                     SELECT category.id 
                     FROM category

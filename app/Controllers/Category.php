@@ -9,8 +9,8 @@ class Category extends BaseController
     public function index()
     {
         $category = $_GET["cat"];
-        $products = new ProductModel();
-        $data["categories"] = $products->getAllByCategoryName($category);
-        return view('CategoryView',$data );
+        $productModel = new ProductModel();
+        $data["products"] = $productModel->getAllByCategoryName($category);
+        return view('CategoryView', $data);
     }
 }
