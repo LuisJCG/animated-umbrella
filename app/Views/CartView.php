@@ -54,19 +54,25 @@
                   </tr>
                </thead>
                <tbody>
-               <?php foreach ($items as $item) { ?>
-                  <tr>
-                     <th scope="row"><?php echo($item["index"]) + 1 ?></th>
-                     <td> <img class="img-responsive" src="https://dummyimage.com/100x100/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($item["name"]) ?>" alt=""></td>
-                     <td><?php echo($item["name"]) ?></td>
-                     <td><?php echo($item["quantity"]) ?></td>
-                     <td> <a href="<?= base_url().'/public/cart/removeCart?id='.$item["cart_id"]?>'" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
-                        </a>
-                     </td>
-                     <td>$ <?php echo($item["item_price"]) ?></td>
-                  </tr>
-                  <?php } ?>
+               <tr>
+               <?php if ($items) { ?>
+                  <?php foreach ($items as $item) { ?>
+                        <th scope="row"><?php echo($item["index"]) + 1 ?></th>
+                        <td> <img class="img-responsive" src="https://dummyimage.com/100x100/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($item["name"]) ?>" alt=""></td>
+                        <td><?php echo($item["name"]) ?></td>
+                        <td><?php echo($item["quantity"]) ?></td>
+                        <td> <a href="<?= base_url().'/public/cart/removeCart?id='.$item["cart_id"]?>" class="icons-btn">
+                           <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
+                           </a>
+                        </td>
+                        <td>$ <?php echo($item["item_price"]) ?></td>
+                     <?php } ?>
+                  <?php } else {  ?>
+                     <th scope="row">1</th>
+                     <td colspan="5" align="center"><h4>Empty Cart! </h4></td>
+                    
+                     <?php }  ?>
+                     </tr>
                </tbody>
             </table>
             <div class="py-5 d-flex flex-column align-items-end mr-5">

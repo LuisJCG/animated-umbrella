@@ -47,6 +47,6 @@ class Cart extends BaseController
         return $this->index();
     }
 
-
-
 }
+
+?>

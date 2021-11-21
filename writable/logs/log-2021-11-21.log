@@ -117,3 +117,15 @@ CRITICAL - 2021-11-21 15:09:33 --> Invalid argument supplied for foreach()
 #9 {main}
 ERROR - 2021-11-21 16:01:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 2
 ERROR - 2021-11-21 16:04:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 2
+CRITICAL - 2021-11-21 16:13:12 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\animated-umbrella\app\Views\CartView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\animated-umbrella\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('CartView', Array, true)
+#4 C:\xampp\htdocs\animated-umbrella\app\Controllers\Cart.php(37): view('CartView', Array)
+#5 C:\xampp\htdocs\animated-umbrella\app\Controllers\Cart.php(47): App\Controllers\Cart->index()
+#6 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Cart->removeCart()
+#7 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#8 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

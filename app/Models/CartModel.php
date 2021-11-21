@@ -38,7 +38,7 @@ class CartModel extends Model
 
     public function removeItem($productId)
     {
-        $this->where('product_id', $productId)->delete();
+        $this->where('id', $productId)->delete();
     }
 }
 
