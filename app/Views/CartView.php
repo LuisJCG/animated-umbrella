@@ -54,9 +54,9 @@
                   </tr>
                </thead>
                <tbody>
-               <tr>
                <?php if ($items) { ?>
                   <?php foreach ($items as $item) { ?>
+                     <tr>
                         <th scope="row"><?php echo($item["index"]) + 1 ?></th>
                         <td> <img class="img-responsive" src="https://dummyimage.com/100x100/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($item["name"]) ?>" alt=""></td>
                         <td><?php echo($item["name"]) ?></td>
@@ -66,13 +66,15 @@
                            </a>
                         </td>
                         <td>$ <?php echo($item["item_price"]) ?></td>
+                        </tr>
                      <?php } ?>
                   <?php } else {  ?>
+                     <tr>
                      <th scope="row">1</th>
                      <td colspan="5" align="center"><h4>Empty Cart! </h4></td>
-                    
-                     <?php }  ?>
                      </tr>
+                     <?php }  ?>
+               </tr>
                </tbody>
             </table>
             <div class="py-5 d-flex flex-column align-items-end mr-5">
