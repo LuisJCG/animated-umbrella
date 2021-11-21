@@ -22,11 +22,11 @@
    <body>
       <!-- Responsive navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <div class="container-fluid px-lg-5">
-            <a class="navbar-brand" href="#!">Animated Umbrella</a>
+         <div class="container px-lg-5">
+            <a class="navbar-brand" href="<?= base_url()?>/public/home">Animated Umbrella</a>
             <div style="float:right">
-               <a href="cart.html" class="icons-btn">
-               <i class="bi bi-cart4 text-danger" style="font-size:1rem;"><span class="number p-1"">2</span></i>
+             <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
+             <i class="bi bi-cart4 text-light" style="font-size:1rem;"> Cart <span class="number p-1" "></span></i>
                </a>
             </div>
          </div>
@@ -50,14 +50,14 @@
                <div class="row mt-4">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="" src="http://placehold.it/500x300">
+                     <img class="" src="https://dummyimage.com/500x300/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($product["name"]) ?>">
                      </a>
                   </div>
                   <div class="col-md-5">
                      <h2><?php echo ($product["name"]) ?></h2>
                      <h5><?php echo ($product["product_description"]) ?></h5>
                      <p><?php echo ($product["price"]) ?> $</p>
-                     <a class="btn btn-dark" href="#">See more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                     <a class="btn btn-dark" href="<?= base_url().'/public/product?id='.$product["id"]?>">See more<span class="glyphicon glyphicon-chevron-right"></span></a>
                   </div>
                </div>
                <?php } ?>

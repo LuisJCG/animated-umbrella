@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION['cart'] = array();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +22,10 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-lg-5">
-            <a class="navbar-brand" href="#!">Animated Umbrella</a>
+            <a class="navbar-brand" href="<?= base_url() ?>/public/home">Animated Umbrella</a>
             <div style="float:right">
-                <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
-                     <i class="bi bi-cart4 text-light" style="font-size:1rem;"> Cart <span class="number p-1" ">2</span></i>
+            <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
+                    <i class="bi bi-cart4 text-light" style="font-size:1rem;"> Cart <span class="number p-1" "></span></i>
                   </a>
                 </div>
             </div>
