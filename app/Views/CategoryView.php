@@ -25,8 +25,8 @@
          <div class="container px-lg-5">
             <a class="navbar-brand" href="<?= base_url()?>/public/home">Animated Umbrella</a>
             <div style="float:right">
-               <a href="cart.html" class="icons-btn">
-               <i class="bi bi-cart4 text-danger" style="font-size:1rem;"><span class="number p-1"">2</span></i>
+             <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
+               <i class="bi bi-trash text-light" style="font-size:1rem;"><span class="number p-1"></span></i>
                </a>
             </div>
          </div>

@@ -18,9 +18,9 @@
          <div class="container px-lg-5">
             <a class="navbar-brand" href="<?= base_url()?>/public/home">Animated Umbrella</a>
             <div style="float:right">
-               <a href="cart.html" class="icons-btn">
-               <i class="bi bi-trash text-danger" style="font-size:1rem;"><span class="number p-1" ">2</span></i>
-               </a>
+            <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
+                    <i class="bi bi-cart4 text-light" style="font-size:1rem;"> Cart <span class="number p-1" "></span></i>
+                  </a>
             </div>
          </div>
       </nav>
@@ -35,8 +35,13 @@
          </div>
       </header>
       <!-- Section-->
+
+  
       <section class="py-1">
          <div class="container px-4 px-lg-5">
+
+         
+         
             <table class="table table-hover table-striped">
                <thead>
                   <tr>
@@ -49,39 +54,19 @@
                   </tr>
                </thead>
                <tbody>
+               <?php foreach ($items as $item) { ?>
                   <tr>
-                     <th scope="row">1</th>
-                     <td> <img class="img-responsive" src="http://placehold.it/100x100" alt=""></td>
-                     <td>Otto</td>
-                     <td>Otto</td>
-                     <td> <a href="cart.html" class="icons-btn">
+                     <th scope="row"><?php echo($item["index"]) + 1 ?></th>
+                     <td> <img class="img-responsive" src="https://dummyimage.com/100x100/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($item["name"]) ?>" alt=""></td>
+                     <td><?php echo($item["name"]) ?></td>
+                     <td><?php echo($item["quantity"]) ?></td>
+                     <td> <a href="<?= base_url().'/public/cart/removeCart?id='.$item["cart_id"]?>'" class="icons-btn">
                         <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
                         </a>
                      </td>
-                     <td>Delete</td>
+                     <td>$ <?php echo($item["item_price"]) ?></td>
                   </tr>
-                  <tr>
-                     <th scope="row">2</th>
-                     <td> <img class="img-responsive" src="http://placehold.it/100x100" alt=""></td>
-                     <td>Thornton</td>
-                     <td>Otto</td>
-                     <td> <a href="cart.html" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
-                        </a>
-                     </td>
-                     <td>Delete</td>
-                  </tr>
-                  <tr>
-                     <th scope="row">2</th>
-                     <td> <img class="img-responsive" src="http://placehold.it/100x100" alt=""></td>
-                     <td>Thornton</td>
-                     <td>Otto</td>
-                     <td> <a href="cart.html" class="icons-btn">
-                        <i class="bi bi-trash text-dark" style="font-size:1.2rem;"><span class="number p-1" "></span></i>
-                        </a>
-                     </td>
-                     <td>@fat</td>
-                  </tr>
+                  <?php } ?>
                </tbody>
             </table>
             <div class="py-5 d-flex flex-column align-items-end mr-5">
@@ -89,15 +74,15 @@
                <table class="table-sm">
                   <tr>
                      <td>Subtotal</td>
-                     <td>300$</td>
+                     <td>$ <?php echo($total_price) ?></td>
                   </tr>
                   <tr>
                      <td>% Off</td>
-                     <td>0$</td>
+                     <td>$ 0</td>
                   </tr>
                   <tr>
                      <th>Total</th>
-                     <td>300$</td>
+                     <td>$ <?php echo($total_price) ?></td>
                   </tr>
                </table>
                <button type="button" class="btn btn-dark mt-2" style="text-align: right;flex:1;">
