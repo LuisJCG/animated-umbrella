@@ -10,13 +10,8 @@
       <!-- Favicon-->
       <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
       <!-- Bootstrap icons-->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-         rel="stylesheet" />
-      <link rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-         crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <style>
          .card-horizontal {
          display: flex;
@@ -27,12 +22,11 @@
    <body>
       <!-- Responsive navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <div class="container-fluid px-lg-5">
-            <a class="navbar-brand" href="#!">Animated Umbrella</a>
+         <div class="container px-lg-5">
+            <a class="navbar-brand" href="<?= base_url()?>/public/home">Animated Umbrella</a>
             <div style="float:right">
-               <a href="cart.html" class="icons-btn">
-               <i class="bi bi-cart4 text-danger"
-                  style="font-size:1rem;"><span class="number p-1"">2</span></i>
+             <a href="<?= base_url() ?>/public/cart#" class="icons-btn">
+             <i class="bi bi-cart4 text-light" style="font-size:1rem;"> Cart <span class="number p-1" "></span></i>
                </a>
             </div>
          </div>
@@ -51,30 +45,27 @@
       <!-- Section-->
       <section class="mt-5">
          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3
-               row-cols-xl-4 justify-content-center">
                <!-- CARDS-->
-               <?php foreach ($categories as $category) { ?>
-               <div class="row">
+               <?php foreach ($products as $product) { ?>
+               <div class="row mt-4">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="img-responsive" src=https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="https://dummyimage.com/500x300/dee2e6/6c757d.jpg">
+                     <img class="" src="https://dummyimage.com/500x300/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($product["name"]) ?>">
                      </a>
                   </div>
                   <div class="col-md-5">
-                     <h3><?php echo $category["category_name"] ?></h3>
-                     <h4>Subheading</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                     <h2><?php echo ($product["name"]) ?></h2>
+                     <h5><?php echo ($product["product_description"]) ?></h5>
+                     <p><?php echo ($product["price"]) ?> $</p>
+                     <a class="btn btn-dark" href="<?= base_url().'/public/product?id='.$product["id"]?>">See more<span class="glyphicon glyphicon-chevron-right"></span></a>
                   </div>
                </div>
-               <hr />
-               <?php }?>
-            </div> 
+               <?php } ?>
+            </div>
          </div>
       </section>
       <!-- Footer-->
-      <footer class="py-5 bg-dark">
+      <footer class="py-5 bg-dark mt-4">
          <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Animated
                Umbrella GmH 2021
@@ -82,15 +73,7 @@
          </div>
       </footer>
    </body>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-   <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-   <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

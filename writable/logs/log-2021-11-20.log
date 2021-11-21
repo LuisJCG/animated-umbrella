@@ -1,0 +1,186 @@
+CRITICAL - 2021-11-20 05:17:38 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\animated-umbrella\app\Views\HomeView.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\animated-umbrella\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('HomeView', Array, true)
+#4 C:\xampp\htdocs\animated-umbrella\app\Controllers\home.php(9): view('HomeView')
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-20 06:53:07 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 06:57:17 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 06:59:11 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(12): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 07:01:35 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 07:02:49 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(12): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 07:02:51 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(12): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 07:03:38 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get_browser()
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 07:03:39 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get_browser()
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 07:05:31 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\animated-umbrella\app\Views\CategoryView.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\animated-umbrella\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('CategoryView', Array, true)
+#4 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(15): view('CategoryView')
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-20 07:06:06 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-20 07:07:31 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:07:31 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:23 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:23 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:24 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:24 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:24 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:24 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:24 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:25 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:25 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:25 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:25 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:25 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:25 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:09:25 --> Unknown column 'Umbrellas' in 'where clause'
+CRITICAL - 2021-11-20 07:09:25 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#1 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 07:10:51 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\animated-umbrella\app\Models\ProductModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): App\Models\ProductModel->getAllByCategoryName('Umbrellas')
+#2 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#3 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#4 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-20 14:23:02 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\animated-umbrella\app\Views\CategoryView.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\animated-umbrella\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\animated-umbrella\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\animated-umbrella\system\Common.php(1092): CodeIgniter\View\View->render('CategoryView', Array, true)
+#4 C:\xampp\htdocs\animated-umbrella\app\Controllers\Category.php(14): view('CategoryView', Array)
+#5 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(802): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\animated-umbrella\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\animated-umbrella\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
