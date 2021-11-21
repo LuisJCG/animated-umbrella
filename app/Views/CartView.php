@@ -16,7 +16,7 @@
       <!-- Responsive navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
          <div class="container px-lg-5">
-            <a class="navbar-brand" href="#!">Animated Umbrella</a>
+            <a class="navbar-brand" href="<?= base_url()?>/public/home">Animated Umbrella</a>
             <div style="float:right">
                <a href="cart.html" class="icons-btn">
                <i class="bi bi-trash text-danger" style="font-size:1rem;"><span class="number p-1" ">2</span></i>
