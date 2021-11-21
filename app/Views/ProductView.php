@@ -46,19 +46,18 @@
                      <div class="col-12 mb-0">
                         <figure class="view overlay rounded z-depth-1 main-img">
                            <a href="" data-size="710x823">
-                           <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" class="img-fluid z-depth-1">
+                           <img src="https://dummyimage.com/500x400/000/fff&text=<?php echo ($product["name"]) ?>" class="img-fluid z-depth-1">
                            </a>
                         </figure>
                      </div>
                   </div>
                </div>
                <div class="col-md-6">
-                  <h5>Fantasy T-shirt</h5>
-                  <p class="mb-2 text-muted text-uppercase small">Shirts</p>
-                  <p><span class="mr-1"><strong>$12.99</strong></span></p>
-                  <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit
-                     error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio,
-                     officia quis dolore quos sapiente tempore alias.
+                  <h5><?php echo ($product["name"]) ?></h5>
+                  <p class="mb-2 text-muted text-uppercase small">New Season</p>
+                  <p><span class="mr-1"><strong>$<?php echo ($product["price"]) ?></strong></span></p>
+                  <p class="pt-1"><?php echo ($product["product_description"]) ?> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. At hoc in eo M. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Expectoque quid ad id, quod quaerebam, respondeas.
                   </p>
                   <button type="button" class="btn btn-dark btn-md mr-1 mt-2">Add to Cart</button>
                </div>

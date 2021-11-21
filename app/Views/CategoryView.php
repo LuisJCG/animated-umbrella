@@ -50,14 +50,14 @@
                <div class="row mt-4">
                   <div class="col-md-6">
                      <a href="#">
-                     <img class="" src="http://placehold.it/500x300">
+                     <img class="" src="https://dummyimage.com/500x300/<?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?><?php echo(rand(0,9)) ?>/fff&text=<?php echo ($product["name"]) ?>">
                      </a>
                   </div>
                   <div class="col-md-5">
                      <h2><?php echo ($product["name"]) ?></h2>
                      <h5><?php echo ($product["product_description"]) ?></h5>
                      <p><?php echo ($product["price"]) ?> $</p>
-                     <a class="btn btn-dark" href="#">See more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                     <a class="btn btn-dark" href="<?= base_url().'/public/product?id='.$product["id"]?>">See more<span class="glyphicon glyphicon-chevron-right"></span></a>
                   </div>
                </div>
                <?php } ?>
