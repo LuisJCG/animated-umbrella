@@ -1,7 +1,3 @@
-<?php
-session_start();
-$_SESSION['cart'] = array();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,8 +32,7 @@ $_SESSION['cart'] = array();
                 <div class="p-4 p-lg-5 rounded-3 text-center">
                     <div class="m-5 m-lg-5">
                         <h1 class="display-5 fw-bold text-light">Welcome to Animated Umbrella Shop!</h1>
-                        <p class="fs-4 text-light">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                    </div>
+                        <p class="fs-4 text-light">The best shop for rainy days with low prices and colourful designs!</p>
                 </div>
             </div>
             </header>

@@ -36,8 +36,8 @@
          <div class="container-fluid px-lg-4" style="background-color:black">
             <div class="p-4 p-lg-5 rounded-3 text-center">
                <div class="m-4 m-lg-2">
-                  <h1 class="display-5 fw-bold text-light">Welcome to Animated Umbrella Shop!</h1>
-                  <p class="fs-4 text-light">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
+                  <h1 class="display-5 fw-bold text-light"><?php echo ($_GET["cat"]) ?> Category</h1>
+                  <p class="fs-4 text-light">With over 15,000 five-star reviewers — and a ranking in the top 10 of our list of the best <?php echo ($_GET["cat"]) ?></p>
                </div>
             </div>
          </div>
@@ -72,7 +72,7 @@
             </p>
          </div>
       </footer>
-   </body>
+</body>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

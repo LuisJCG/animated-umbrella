@@ -9,6 +9,11 @@ class Cart extends BaseController
 {
     public function index()
     {
+        $data = $this->getCartInfo();
+        return view('CartView', $data);
+    }
+
+    public function getCartInfo() {
         $cartModel = new CartModel();
         $cartItems = $cartModel->findAll();
         $productModel = new ProductModel();
@@ -33,8 +38,7 @@ class Cart extends BaseController
         }
 
         $data["total_price"] = $total_price;
-
-        return view('CartView', $data);
+        return $data;
     }
 
 

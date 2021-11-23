@@ -71,7 +71,7 @@
                   <?php } else {  ?>
                      <tr>
                      <th scope="row">1</th>
-                     <td colspan="5" align="center"><h4>Empty Cart! </h4></td>
+                     <td colspan="5" align="center"><h4>Empty Cart :( </h4></td>
                      </tr>
                      <?php }  ?>
                </tr>
@@ -95,7 +95,9 @@
                </table>
                <button type="button" class="btn btn-dark mt-2" style="text-align: right;flex:1;">
                <i class="bi bi-bag-check"></i>
+               <a href="<?= base_url().'/public/confirm?id='.$item["cart_id"]?>" class="icons-btn">
                Buy Now!
+               </a>
                </button>
             </div>
          </div>
