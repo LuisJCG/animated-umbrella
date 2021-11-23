@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\CategoryModel;
 
+use App\Models\CartModel;
+use App\Models\OrderItemModel;
+use App\Models\OrderModel;
 
 class Confirm extends BaseController
 {
@@ -13,12 +15,37 @@ class Confirm extends BaseController
         return view('ConfirmPurchageView', $data);
     }
 
-    public function register() 
+    public function register()
     {
-
         $form_data = $this->request->getPost();
-        print_r($form_data);
-        echo($_POST);
-        print_r($_POST);
+
+        // Register order and items
+        $uuid = $this->registerOrder($form_data);
+        $cartModel = new CartModel();
+        $this->registerItem($cartModel, $uuid);
+
+        // Clear cart
+        $cartModel->empty();
+
+        // Return Home
+        $home = new Home();
+        return $home->index();
+    }
+
+    public function registerOrder($form_data)
+    {
+        $orderModel = new OrderModel();
+        $uuid = $orderModel->registerOrder($form_data);
+        return $uuid;
+    }
+
+    public function registerItem($cartModel, $uuid)
+    {
+        $orderItemModel = new OrderItemModel();
+        $cartItems = $cartModel->findAll();
+
+        foreach ($cartItems as $item) {
+            $orderItemModel->registerItemOrder($uuid, $item["product_id"]);
+        }
     }
 }

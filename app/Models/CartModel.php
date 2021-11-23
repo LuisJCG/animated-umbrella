@@ -40,6 +40,12 @@ class CartModel extends Model
     {
         $this->where('id', $productId)->delete();
     }
+
+    public function empty()
+    {
+        $query = "DELETE FROM Cart";
+        $this->db->query($query);
+    }
 }
 
 ?>

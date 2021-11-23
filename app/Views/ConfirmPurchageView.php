@@ -86,7 +86,7 @@
                                     <div class="form-group">
                                        <label for="">Adress</label>
                                        <input type="address" class="form-control"  name="clientAddress" id="clientAddress" placeholder="Chapman 711-2880 Nulla St. Mankato Mississippi 96522">
-                                       <input type="hidden" id="cartId" value="<?php echo ($_GET["id"]) ?>">
+                                       <input type="hidden" name="cartId" id="cartId" value="<?php echo ($_GET["id"]) ?>">
                                     </div>
                                     <input type="submit" value="Confirm!" class="btn btn-dark text-align: right;flex:1;">
                                  </form>
