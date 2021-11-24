@@ -93,12 +93,21 @@
                      <td>$ <?php echo($total_price) ?></td>
                   </tr>
                </table>
-               <button type="button" class="btn btn-dark mt-2" style="text-align: right;flex:1;">
-               <i class="bi bi-bag-check"></i>
-               <a href="<?= base_url().'/public/confirm?id='.$item["cart_id"]?>" class="icons-btn">
-               Buy Now!
-               </a>
-               </button>
+
+               <?php if ($items) { ?>
+                  <button type="button" class="btn btn-dark mt-2" style="text-align: right;flex:1;">
+                  <i class="bi bi-bag-check"></i>
+                  <a href="<?= base_url().'/public/order?id='.$item["cart_id"]?>" class="icons-btn">
+                  Buy Now!
+                  </a>
+                  </button>
+               <?php } else { ?>
+                  <h4><button type="button" disabled="true" class="btn btn-dark mt-2" style="text-align: right;flex:1;">
+                  <i class="bi bi-bag-check"></i>
+                  Buy Now!
+                  </a>
+                  </button></4>
+               <?php }  ?>
             </div>
          </div>
       </section>

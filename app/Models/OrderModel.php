@@ -17,7 +17,7 @@ class OrderModel extends Model
         $uuid = uniqid();
 
         $query = "INSERT INTO storeorder (id, name, email, address, status) 
-        VALUES ('+$uuid+',
+        VALUES ('$uuid',
         '".$form_data['clientName']."',
         '".$form_data['clientMail']."',
         '".$form_data['clientAddress']."',

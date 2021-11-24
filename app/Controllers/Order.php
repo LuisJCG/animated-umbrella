@@ -6,7 +6,7 @@ use App\Models\CartModel;
 use App\Models\OrderItemModel;
 use App\Models\OrderModel;
 
-class Confirm extends BaseController
+class Order extends BaseController
 {
     public function index()
     {

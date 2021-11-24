@@ -60,7 +60,7 @@
                                  <p class="pt-1"><?php echo ($product["product_description"]) ?>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. At hoc in eo M. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Expectoque quid ad id, quod quaerebam, respondeas.
                                  </p>
-                                 <button type="button" class="btn btn-dark btn-md mr-1 mt-2"> <a class="btn btn-dark" href="<?= base_url().'/public/product/addCart?id='.$product["id"]?>">Add to Cart</a></button>
+                                 <button type="button" onclick="alert('Added to Cart!')" class="btn btn-dark btn-md mr-1 mt-2"> <a class="btn btn-dark" href="<?= base_url().'/public/product/addCart?id='.$product["id"]?>">Add to Cart</a></button>
                               </div>
                            </div>
                         </div>

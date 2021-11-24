@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
    <meta name="description" content="" />
    <meta name="author" content="" />
-   <title>AU - Shopping Cart</title>
+   <title>AU - AdminView</title>
    <!-- Favicon-->
    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
    <!-- Bootstrap icons-->
@@ -31,59 +31,39 @@
                      <div class="container px-lg-4">
                         <div class="p-4 p-lg-2 rounded-3">
                            <div class="m-3 m-lg-0">
-                              <h1 class="display-5 fw-bold text">Shipping Info</h1>
+                              <h1 class="display-5 fw-bold text">BackOffice</h1>
                            </div>
                         </div>
                      </div>
                      </header>
                      <!-- Section-->
-                     <section class="py-1">
+                     <section class="py-5">
                         <div class="container px-4 px-lg-5">
-                           <h4 class="display-5 fw-bold text">Resume</h1>
-                              <table class="table table-striped table-sm ">
+                           <h4 class="display-5 fw-bold text">Orders</h1>
+                              <table class="table table-striped ">
                                  <thead>
                                     <tr>
-                                       <th scope="col">Nº</th>
-                                       <th scope="col">Product</th>
-                                       <th scope="col">Quantity</th>
-                                       <th scope="col">Price</th>
+                                       <th scope="col">Identifier</th>
+                                       <th scope="col">Client Name</th> 
+                                       <th scope="col">Client Email</th>
+                                       <th scope="col">Client Adress</th>
+                                       <th scope="col">Order Status</th>
                                     </tr>
                                  </thead>
                                  <tbody>
-                                    <?php foreach ($items as $item) { ?>
+                                    <?php foreach ($orders as $order) { ?>
                                        <tr>
-                                          <th scope="row"><?php echo ($item["index"]) + 1 ?></th>
-                                          <td><?php echo ($item["name"]) ?></td>
-                                          <td><?php echo ($item["quantity"]) ?></td>
-                                          <td>$ <?php echo ($item["item_price"]) ?></td>
+                                          <td><?php echo ($order["id"]) ?></td>
+                                          <td><?php echo ($order["name"]) ?></td>
+                                          <td><?php echo ($order["email"]) ?></td>
+                                          <td><?php echo ($order["address"]) ?></td>
+                                          <td><?php echo ($order["status"]) ?></td>
                                        </tr>
                                     <?php } ?>
-                                    <tr>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <th scope="col">TOTAL: <?php echo ($total_price) ?></th>
-                                    </tr>
                                  </tbody>
                               </table>
 
-                              <div class="py-5">
-                                 <form action="order/register" method="post">
-                                    <div class="form-group">
-                                       <label for="">Shipping Name</label>
-                                       <input type="" class="form-control" name="clientName" id="clientName" placeholder="Jhon Doe">
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="">Email address</label>
-                                       <input type="email" class="form-control" name="clientMail" id="clientMail" aria-describedby="emailHelp" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="">Adress</label>
-                                       <input type="address" class="form-control" name="clientAddress" id="clientAddress" placeholder="Chapman 711-2880 Nulla St. Mankato Mississippi 96522">
-                                    </div>
-                                    <input type="submit" value="Confirm!" class="btn btn-dark text-align: right;flex:1;">
-                                 </form>
-                              </div>
+                             
                         </div>
                      </section>
                      <!-- Footer-->
